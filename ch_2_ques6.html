@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>quest 6</title>
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		</head>
+	<body>
+		<div class= container style="padding-top:40px">
+			<h4>Write a function quote that takes a string value and adds double quotation marks at both the beginning and the end.</h4>
+			<label class="text-primary">Enter any string</label>
+			<input type="text" placeholder="Enter a string" id="q"><br><br>
+			<button class="btn btn-warning" onclick="quote()">CONVERT</button><br><br>
+			<p id="result"> </p>
+		</div>
+			<script>
+				function quote(){
+				a = document.getElementById('q').value
+				document.getElementById("result").innerHTML= 'The quote you Entered:  ' + '"' + a + '"'
+				}
+		</script>
+	</body>
+	</html>	

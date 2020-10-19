@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+	<html lang="en">
+
+
+		<head>
+			<title> Histogram</title>
+
+
+</head>
+
+
+
+
+
+    <body>
+
+
+		<h1> Histogram </h1>
+
+		<h3>Write a program called Histogram that allows the user to select a file containing exam scores ranging from 0 to 100 and then displays a histogram of those scores, divided into the ranges 0–9, 10–19, 20–29, and so forth, up to the range containing only the value 100. Your functionshould match the format shown in the sample run as closely as possible.thank you Parth!</h3>
+				<script>
+		
+
+			var scores = []
+
+			for(var i =1; i<=10; i++){
+			  scores.push(prompt("Enter  score for student "+ i))
+			}
+
+
+			var data = [0,0,0,0,0,0,0,0,0,0,0]
+
+			for(var i =0 ; i< scores.length ; i++){
+
+			  if(scores[i] > 0 && scores[i] <= 9){
+				data[0] = data[0]+1
+			  }
+
+			  if(scores[i] >= 10 && scores[i] <= 19){
+				data[1] = data[1]+1
+			  }
+
+			  if(scores[i] >= 20 && scores[i] <= 29){
+				data[2] = data[2]+1
+			  }
+
+			  if(scores[i] >= 30 && scores[i] <= 39){
+				data[3] = data[3]+1
+			  }
+
+			  if(scores[i] >= 40 && scores[i] <= 49){
+				data[4] = data[1]+1
+			  }
+
+			  if(scores[i] >= 50 && scores[i] <= 59){
+				data[5] = data[5]+1
+			  }
+
+			  if(scores[i] >= 60 && scores[i] <= 69){
+				data[6] = data[6]+1
+			  }
+
+			  if(scores[i] >= 70 && scores[i] <= 79){
+				data[7] = data[7]+1
+			  }
+
+			  if(scores[i] >= 80 && scores[i] <= 89){
+				data[8] = data[8]+1
+			  }
+
+			  if(scores[i] >= 90 && scores[i] <= 99){
+				data[9] = data[9]+1
+			  }
+
+			  if(scores[i] == 100){
+				data[10] = data[10]+1
+			  }
+			}
+
+
+			for(var i =0 ; i < data.length; i++){
+
+			   var total_stars =''
+
+			  for(var j=0 ; j<data[i]; j++){
+				  total_stars = total_stars+"*"
+			  }
+
+				  document.write(i+"0s :" + total_stars)
+				  document.write("<br>")
+
+			}
+			
+  </script>
+
+
+    </body>
+
+
+
+    </html>

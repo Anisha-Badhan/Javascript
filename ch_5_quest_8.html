@@ -1,0 +1,27 @@
+<!doctype html>
+	<html>
+		<head>
+			<script>
+				function  fact(n) {
+				   if (n == 0) {
+					  return 1;
+				   } else {
+					  return n * fact(n - 1);
+				   }
+				}
+			 function combination(x){
+			 var pasc=0
+				for (var i=0; i<x; i++){
+							
+							 pasc=pasc+fact(x)/(fact(x-i)*fact(i))
+							
+		
+							}return pasc
+			 
+			 }
+			document.write(combination(6))
+			</script>
+		</head>
+		<body>
+		</body>
+	</html>

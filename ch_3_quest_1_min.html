@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>finding minimum of two numbers</title>
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		</head>
+	<body>
+		<div class= container style="padding-top:40px">
+			<h4>Using the two definitions of the max function—one with an if statement and one withthe ?: operator—as examples, write corresponding implementations of the min function, which returns the smaller of its two arguments.</h4>
+			<label class="text-primary">Enter the value of 1st Number</label>
+			<input type="text" placeholder="enter the value here" id="valuex"><br><br>
+			<label class="text-primary">Enter the value of 2nd Number</label>
+			<input type="text" placeholder="enter the value here" id="valuey"><br><br>
+			<button class="btn btn-warning" onclick="min1('a','b')">with IF</button>
+            <button class="btn btn-warning" onclick="min2('a','b')">with ?:</button><br><br>
+			<p id="result"> </p>
+		</div>
+			<script>
+				
+					function min1(x, y){
+						x = Number(document.getElementById('valuex').value)
+						y = Number(document.getElementById('valuey').value)
+						if(x>y){
+						document.getElementById("result").innerHTML= 'Whose smaller??:  it is ' + y
+						} else{
+						document.getElementById("result").innerHTML= 'Whose smaller??:  it is ' + x
+						}
+					}
+						
+					function min2(x,y){
+					x = Number(document.getElementById('valuex').value)
+					y = Number(document.getElementById('valuey').value)
+					z = (x<y)? x:y
+					document.getElementById("result").innerHTML= 'Whose smaller??:  it is ' + z					
+					}
+		</script>
+	</body>
+	</html>	

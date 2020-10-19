@@ -1,0 +1,35 @@
+<!doctype html>
+	</html>
+		<head>
+			<script>
+			function digitalRoot(num){
+				
+				var str= num.toString()
+				var sum=0
+									
+				for(var i=0; i<str.length; i++){
+					sum= sum + Number(str.charAt(i))
+					
+					
+				}var sum2=sum.toString()
+				if (sum2.length==1){
+				 document.write(sum)
+				
+				}if(sum2.length!=1){
+					num=sum
+					digitalRoot(num)
+					
+				}
+				
+			} 
+			
+			document.write(digitalRoot(23))			//=>5
+			document.write('<br>')
+			document.write(digitalRoot(1523))		//=>1+5+2+3=11  => 1+1=2
+			document.write('<br>')
+			
+			</script>
+		</head>
+		<body>
+		</body>
+	</html>

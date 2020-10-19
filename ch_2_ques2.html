@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>quest 2</title>
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		</head>
+	<body>
+		<div class= container style="padding-top:40px">
+			<h4> Write a function quotient that takes two numbers, x and y (which you may assume are both positive integers), and returns the integral quotient of x / y, discarding any remainder. For example, calling quotient(9, 4) should return 2 because four goes into nine twice with a remainder of one left over. This function is easy to write if you use the Math.floor function; the challenge in this exercise is to write quotient using only the standard arithmetic operators.</h4>
+			<label class="text-primary">Enter the value of x</label>
+			<input type="text" placeholder="enter the value of x" id="valuex"><br><br>
+			<label class="text-primary">Enter the value of y</label>
+			<input type="text" placeholder="enter the value of y" id="valuey"><br><br>
+			<button class="btn btn-warning" onclick="func('x','y')">Calculate</button><br><br>
+			<p id="result"> </p>
+		</div>
+			<script>
+				function func(a,b){
+				a = Number(document.getElementById('valuex').value)
+				b = Number(document.getElementById('valuey').value)
+				var R = a%b
+				var Q = (a-R)/b
+				document.getElementById("result").innerHTML= 'Result:  ' + Q
+				}
+		</script>
+	</body>
+	</html>	

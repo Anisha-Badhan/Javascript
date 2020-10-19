@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>finding Maximum of three numbers</title>
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		</head>
+	<body>
+		<div class= container style="padding-top:40px">
+			<h4>Write a function max3 that returns the largest of its three arguments.</h4>
+			<label class="text-primary">Enter the value of 1st Number</label>
+			<input type="text" placeholder="enter the value here" id="valuex"><br><br>
+			<label class="text-primary">Enter the value of 2nd Number</label>
+			<input type="text" placeholder="enter the value here" id="valuey"><br><br>
+			<label class="text-primary">Enter the value of 3rd Number</label>
+			<input type="text" placeholder="enter the value here" id="valuez"><br><br>
+			<button class="btn btn-warning" onclick="myFunction('a','b','c')">Submit</button><br><br>
+            <p id="result"> </p>
+		</div>
+			<script>
+				
+					function myFunction(x, y, z){
+						x = Number(document.getElementById('valuex').value)
+						y = Number(document.getElementById('valuey').value)
+						z = Number(document.getElementById('valuez').value)
+						document.getElementById("result").innerHTML= 'Whose Biggest??:  it is ' + Math.max(x,y,z)					
+					}
+		</script>
+	</body>
+	</html>	

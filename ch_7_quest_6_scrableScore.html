@@ -1,0 +1,42 @@
+<!doctype html>
+	<html>
+		<head>
+		<title>learning Javascript</title>
+			<script>
+				function scrabbleScore(word){
+				 
+				 var score=0
+					for(var i=0; i<word.length; i++){
+						if(word.charAt(i)=='A' || word.charAt(i)=='E' || word.charAt(i)=='I' || word.charAt(i)=='L' || word.charAt(i)=='N' || word.charAt(i)=='O' || word.charAt(i)=='R' || word.charAt(i)=='S' || word.charAt(i)=='T' || word.charAt(i)=='U'){
+							score=score+1
+						}
+						if(word.charAt(i)=='D' || word.charAt(i)=='G'){
+							score=score+2
+						} 
+						if(word.charAt(i)=='B' || word.charAt(i)=='C' || word.charAt(i)=='M' || word.charAt(i)=='P'){
+							score=score+3
+						} 
+						if(word.charAt(i)=='F' || word.charAt(i)=='H' || word.charAt(i)=='V' || word.charAt(i)=='W' || word.charAt(i)=='Y'){
+							score=score+4
+						} 
+						if(word.charAt(i)=='K'){
+							score=score+5
+							}
+						if(word.charAt(i)=='J' || word.charAt(i)=='X'){
+							score=score+8
+						} 
+						if(word.charAt(i)=='Q' || word.charAt(i)=='Z'){
+							score=score+10
+						} 
+					
+					}return score
+				} 
+				document.write(scrabbleScore('WORD'))
+				document.write('<br>')
+				document.write(scrabbleScore('HELLO'))
+			</script>
+		<body>
+		
+		</body>
+		</head>
+	</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+	<html>
+		<head>
+			<script>
+				function dart(){
+				var x=0
+				var y=0
+				dart_output=0
+				var inside_circle=0
+				
+				//value of x=-1 => x^2=1
+				//value of y=1 => y^2=1
+				//x^2 + y^2= 2; condition is it should be <1 
+				for(var i=1; i<=10000; i++){
+				 x= Math.random()
+				 y=Math.random()
+				 dart_output=x*x + y*y
+					if(dart_output<1){
+						inside_circle= inside_circle+1
+				 }
+				}return inside_circle/10000
+				
+			}console.log(dart())
+  
+			
+			</script>
+		</head>
+		<body>
+		</body>
+	</html>

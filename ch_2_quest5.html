@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>quest 5</title>
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		</head>
+	<body>
+		<div class= container style="padding-top:40px">
+			<h4>Write a function that computes the area of a triangle given values for its base and its height</h4>
+			<label class="text-primary">Enter the value of Base</label>
+			<input type="text" placeholder="enter the value of base" id="valueb"><br><br>
+			<label class="text-primary">Enter the value of Height</label>
+			<input type="text" placeholder="enter the value of height" id="valueh"><br><br>
+			<button class="btn btn-warning" onclick="areaOfTrianle('b','h')">Calculate</button><br><br>
+			<p id="result"> </p>
+		</div>
+			<script>
+				function areaOfTrianle(a,b){
+				a = Number(document.getElementById('valueb').value)
+				b = Number(document.getElementById('valueh').value)
+				var A = (a*b)/2
+				document.getElementById("result").innerHTML= 'Result:  ' + A.toFixed(2)
+				}
+		</script>
+	</body>
+	</html>	

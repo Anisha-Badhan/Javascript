@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>quest 3</title>
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		</head>
+	<body>
+		<div class= container style="padding-top:40px">
+			<h4>Write a function sumFirstNIntegers that takes the value of N as its argument and returns the sum of those integers</h4>
+			<label class="text-primary">Enter the value of N</label>
+			<input type="text" placeholder="enter the value of N" id="valueN"><br><br>
+			<button class="btn btn-warning" onclick="sumFirstNIntegers()">Calculate</button><br><br>
+			<p id="result"> </p>
+		</div>
+			<script>
+				function sumFirstNIntegers(){
+				N = Number(document.getElementById('valueN').value)
+				z = (N*(N+1))/2
+				document.getElementById("result").innerHTML= 'Result:  ' + z
+				}
+		</script>
+	</body>
+	</html>	

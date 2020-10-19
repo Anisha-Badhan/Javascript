@@ -1,0 +1,27 @@
+<!doctype html>
+	<html>
+		<head>
+			<script>
+				function coin_toss(){
+					var num=Number(document.getElementById('num').value)
+					var head=0
+					var i=0
+					min=0
+					max=1
+					while(head!=num){
+						head=head+Math.floor(Math.random() * ( max- min + 1) )+min
+							i=i+1
+							console.log(head)
+						}
+						if(head==num){
+							document.getElementById('result').innerHTML='it took '+ i +' turns to reach ' + num +' heads.'
+					}}
+			</script>
+		</head>
+		<body>
+		<p>Write a function consecutiveHeads(numberNeeded) that simulates tossing a coin repeatedly until the specified number of heads appear consecutively. At that point, your program should display a line on the console that indicates how many coin tosses were needed to complete the process.</p>
+			<input type='text' id='num' placeholder='Enter the number for Head'><br><br><br>
+			<button onclick='coin_toss()'>click me</button><br><br>
+			<p id='result'></p>
+		</body>
+	</html>
